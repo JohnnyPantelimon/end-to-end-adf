@@ -1,0 +1,22 @@
+{
+	"name": "ls_adls_gen2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://endtoendsajpm.dfs.core.windows.net/",
+			"tenant": "9eafc177-552f-407a-a74f-be8d3198a3a5",
+			"servicePrincipalId": "af5e6fde-5cb3-4981-9e40-ec3309ebb3f7",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_end_2_end_kv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sp-secret"
+			}
+		}
+	}
+}

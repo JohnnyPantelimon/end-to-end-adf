@@ -1,0 +1,9 @@
+{
+	"name": "endtoendadfjpm",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f779d00b-b1d7-47bc-ab3b-2cfe895bde26",
+		"tenantId": "9eafc177-552f-407a-a74f-be8d3198a3a5"
+	}
+}
