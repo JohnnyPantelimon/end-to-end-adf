@@ -1,0 +1,48 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_gen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "airlines.json",
+				"fileSystem": "airlines"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				},
+				"alias": {
+					"type": "string"
+				},
+				"iata": {
+					"type": "string"
+				},
+				"icao": {
+					"type": "string"
+				},
+				"callsign": {
+					"type": "string"
+				},
+				"country": {
+					"type": "string"
+				},
+				"active": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
